@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- each key contains the (case sensitive) name of a radius attribute -->
+	<!-- note that we wrote "entri" instead of "entry" to force an error during tests -->
+	<entri key="NAS-Identifier">GluuVPN</entri>
+	<entry key="Sevice-Type">5</entry>
+</properties>

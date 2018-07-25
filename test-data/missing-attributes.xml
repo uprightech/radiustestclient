@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- the hostname of the radius server -->
+	<entry key="server.ipaddress">0.0.0.0</entry>
+	<!-- the authentication port for the radius server -->
+	<entry key="server.authport">1812</entry>
+	<!-- the accounting port for the radius server -->
+	<entry key="server.acctport">1813</entry>
+
+	<!-- The radius shared secret -->
+	<entry key="server.sharedsecret">*****************</entry>
+
+	<!-- AUTHENTICATION PARAMETERS -->
+
+	<!-- username -->
+	<entry key="auth.username">admin</entry>
+	<!-- password -->
+	<entry key="auth.password">*************</entry>
+
+	<!-- retry count -->
+	<entry key="auth.retrycount">1</entry>
+
+	<!-- file containing radius attributes to submit on our request -->
+	<entry key="radius.attributes">awol.xml</entry>
+
+</properties>

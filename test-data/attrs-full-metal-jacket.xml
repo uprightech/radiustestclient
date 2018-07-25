@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<!-- each key contains the (case sensitive) name of a radius attribute -->
+	<entry key="NAS-Identifier">GluuNAS</entry>
+	<entry key="NAS-IP-Address">192.168.111.101</entry>
+</properties>
