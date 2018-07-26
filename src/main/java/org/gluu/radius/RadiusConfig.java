@@ -40,6 +40,7 @@ public class RadiusConfig {
 	private Integer acctport;
 	private String sharedsecret;
 	private Integer retrycount;
+	private Integer timeout;
 	private String  username;
 	private String  password;
 	private RadiusClientAttributes attributes;
@@ -48,6 +49,7 @@ public class RadiusConfig {
 	private static final String AUTHPORT_PROPERTY_KEY = "server.authport";
 	private static final String ACCTPORT_PROPERTY_KEY = "server.acctport";
 	private static final String SHARED_SECRET_KEY = "server.sharedsecret";
+	private static final String TIMEOUT_KEY = "server.timeout";
 	private static final String RADIUS_ATTRIBUTES_KEY = "radius.attributes";
 	private static final String RETRYCOUNT_KEY = "auth.retrycount";
 	private static final String USERNAME_KEY = "auth.username";
@@ -82,6 +84,11 @@ public class RadiusConfig {
 	public Integer getRetryCount() {
 
 		return retrycount;
+	}
+
+	public Integer getTimeout() {
+
+		return timeout;
 	}
 
 	public String getUsername() {
@@ -124,7 +131,7 @@ public class RadiusConfig {
 
 
 
-	public static final RadiusConfig loadFromFile(String filename) {
+	public static final RadiusConfig create(String filename) {
 
 		RadiusConfig config = new RadiusConfig();
 		Properties configprops = loadPropertiesFromXml(filename);
@@ -133,6 +140,7 @@ public class RadiusConfig {
 		config.authport  = propertyAsInt(AUTHPORT_PROPERTY_KEY,configprops);
 		config.acctport  = propertyAsInt(ACCTPORT_PROPERTY_KEY,configprops);
 		config.retrycount = propertyAsInt(RETRYCOUNT_KEY,configprops);
+		config.timeout  = propertyAsInt(TIMEOUT_KEY,configprops);
 		config.username = configprops.getProperty(USERNAME_KEY);
 		config.password = configprops.getProperty(PASSWORD_KEY);
 		config.sharedsecret = configprops.getProperty(SHARED_SECRET_KEY);

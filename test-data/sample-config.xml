@@ -11,6 +11,9 @@
 	<!-- The radius shared secret -->
 	<entry key="server.sharedsecret">*****************</entry>
 
+	<!-- server response timeout in milliseconds -->
+	<entry key="server.timeout">3000</entry>
+
 	<!-- AUTHENTICATION PARAMETERS -->
 
 	<!-- username -->

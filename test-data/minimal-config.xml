@@ -11,6 +11,9 @@
 	<!-- The radius shared secret -->
 	<entry key="server.sharedsecret">*wS?U+W6use_wppS</entry>
 
+	<!-- server response timeout in milliseconds -->
+	<entry key="server.timeout">3000</entry>
+
 	<!-- AUTHENTICATION PARAMETERS -->
 
 	<!-- username -->
